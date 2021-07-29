@@ -1,0 +1,10 @@
+<svg width="1162" height="1166" viewBox="0 0 1162 1166" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Mask Group">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1162" height="1166">
+<path id="Subtract" fill-rule="evenodd" clip-rule="evenodd" d="M578.221 1166C900.203 1166 1161.22 904.982 1161.22 583C1161.22 261.018 900.203 0 578.221 0C313.546 0 90.0651 176.373 18.898 418H375.221V658H0C36.8022 944.558 281.651 1166 578.221 1166Z" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask0)">
+<circle id="Ellipse 86" cx="551.721" cy="549.5" r="521" stroke="#40B5E7"/>
+</g>
+</g>
+</svg>

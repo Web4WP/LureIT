@@ -1,0 +1,48 @@
+{
+  "name": "gulp",
+  "version": "2.0.0",
+  "description": "Build the project Gulp",
+  "main": "gulpfile.js",
+  "private": true,
+  "data": "30.06.2021",
+  "author": {
+    "name": "Andrey Shurygin",
+    "email": "7093553s@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/7093553s/Project-start.git"
+  },
+  "homepage": "https://github.com/7093553s/Project-start.git",
+  "engines": {
+    "node": ">=14.15.4",
+    "npm": ">=6.14.1"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp start"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie < 11"
+  ],
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-cheerio": "^1.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-cssbeautify": "^3.0.0",
+    "gulp-csscomb": "^3.1.0",
+    "gulp-html-bem-validator": "^1.0.5",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-w3cjs": "^1.3.2"
+  }
+}

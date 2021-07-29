@@ -1,0 +1,264 @@
+.skills {
+
+}
+
+.skills__wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.skills__item {
+  width: 50%;
+  height: 360px;
+  box-sizing: border-box;
+}
+
+.skills__callback {
+  padding: 43px 82px 93px;
+  color: $white;
+  background: linear-gradient(113.02deg, #090037 16.78%, rgba(0, 0, 0, 0) 95.59%), #241A59;
+}
+
+.skills__callback-title {
+  margin-bottom: 43px;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.skills__callback-text {
+  max-width: 330px;
+  margin-bottom: 42px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.skills__callback-btn {
+  padding: 14px 43px 14px;
+  font-size: 16px;
+  font-weight: 700;
+  color: $white;
+  text-align: center;
+  border-radius: 50px;
+  border: 2px solid $white;
+  &:hover {
+    background: $white;
+    color: #090037;
+  }
+}
+
+.skills__dev {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills__dev-left {
+  width: 50%;
+  padding: 48px 37px 0;
+  box-sizing: border-box;
+}
+
+.skills__dev-item {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  span {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  &:nth-child(2) {
+    .skills__dev-range-fill {
+      width: 80%;
+    }
+  }
+  &:nth-child(3) {
+    .skills__dev-range-fill {
+      width: 80%;
+    }
+  }
+  &:nth-child(4) {
+    margin-bottom: 0;
+    .skills__dev-range-fill {
+      width: 84%;
+    }
+  }
+}
+
+.skills__dev-range {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  margin-top: 8px;
+  background: #e8e8e8;
+}
+
+.skills__dev-range-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 88%;
+  height: 100%;
+  background: #0386FF;
+}
+
+.skills__dev-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  color: $white;
+  background: linear-gradient(213.01deg, #BCE2FF -0.54%, rgba(0, 141, 250, 0) 95.51%), #40B5E7;
+}
+
+.skills__dev-right-wrap {
+  max-width: 115px;
+  margin: 0 auto;
+}
+
+.skills__dev-right-number {
+  margin-bottom: 9px;
+  font-family: $Comfortaa;
+  font-size: 99px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.skills__dev-right-text {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.skills__projects {
+
+}
+
+.skills__projects-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills__projects-img {
+  width: 50%;
+  height: 360px;
+  box-sizing: border-box;
+  object-fit: cover;
+}
+
+.skills__projects-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  color: #0EB1FF;
+}
+
+.skills__projects-right-number {
+  margin-bottom: 9px;
+  font-family: $Comfortaa;
+  font-size: 99px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.skills__projects-right-text {
+  max-width: 198px;
+  font-weight: 300;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.skills__solution {
+
+}
+
+.skills__solution-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills__solution-img {
+  width: 50%;
+  height: 360px;
+  box-sizing: border-box;
+  object-fit: cover;
+}
+
+.skills__solution-right {
+  width: 50%;
+  padding: 93px 10px 0 47px;
+}
+
+.skills__solution-title {
+  margin-bottom: 29px;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.skills__solution-list {
+
+}
+
+.skills__solution-item {
+  margin-bottom: 11px;
+  list-style-image: url("../img/svg/check-solution.svg");
+  list-style-position: inside;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.skills__computers {
+
+}
+
+.skills__computers-img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+}
+
+.skills__map {
+
+}
+
+.skills__map-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills__map-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  box-sizing: border-box;
+  color: #241A59;
+}
+
+.skills__map-number {
+  margin-bottom: 9px;
+  font-family: $Comfortaa;
+  font-size: 99px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.skills__map-text {
+  max-width: 204px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.skills__map-right {
+  width: 50%;
+}
+
+.skills__map-img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+}

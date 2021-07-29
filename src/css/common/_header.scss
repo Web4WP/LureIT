@@ -1,0 +1,64 @@
+.header {
+  padding: 15px 0;
+  a, button {
+    font-family: $Comfortaa;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    color: $white;
+  }
+}
+
+.header__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__menu {
+  position: relative;
+  margin-right: 31px;
+  padding-left: 29px;
+  color: $white;
+  &::before {
+    content: url("../img/svg/menu.svg");
+    position: absolute;
+    top: -4px;
+    left: -7px;
+    width: 22px;
+  }
+}
+
+.header__middle {
+
+  a {
+
+    img {
+      width: 159px;
+      object-fit: cover;
+    }
+  }
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+}
+
+.header__lang {
+  padding-right: 19px;
+  background-image: url("../img/svg/lang-arrow.svg");
+  background-size: 12px;
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+
+.header__person {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 15px;
+  background-image: url("../img/svg/person.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

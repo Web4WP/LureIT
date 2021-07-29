@@ -1,0 +1,139 @@
+.footer {
+  background: #1A1240;
+  color: #ffffff;
+  a {
+    color: $white;
+  }
+}
+
+.footer__wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 107px 0 40px;
+  border-bottom: 1px solid #484166;
+}
+
+.footer__col {
+  width: 18%;
+  &:nth-child(2) {
+    width: 42.7%;
+    display: flex;
+  }
+  &:nth-child(3) {
+    width: 24%;
+  }
+}
+
+.footer__col-logo-link {
+  display: inline-block;
+  margin-bottom: 18px;
+}
+
+.footer__col-logo-img {
+  width: 159px;
+  object-fit: cover;
+}
+
+.footer__col-about {
+  margin-bottom: 28px;
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+.footer__social-link {
+  margin-right: 18px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer__col-menu {
+  margin-right: 76px;
+  ul {
+
+    li {
+      margin-bottom: 7px;
+      a {
+        font-size: 14px;
+        color: $white;
+        &:hover {
+          color: #40b5e7;
+        }
+      }
+    }
+  }
+}
+
+.footer__col-menu-title {
+  margin-bottom: 32px;
+  font-family: $Comfortaa;
+  font-weight: 700;
+  color: #40B5E7;
+  text-transform: uppercase;
+}
+
+.footer__col-contact-title {
+  margin-bottom: 32px;
+  padding-left: 34px;
+  font-family: $Comfortaa;
+  font-weight: 700;
+  color: #40B5E7;
+  text-transform: uppercase;
+}
+
+.footer__col-contact-item {
+  margin-bottom: 9px;
+  padding-left: 34px;
+  font-size: 14px;
+  &_address {
+    background: url("../img/svg/map.svg") 4px 6px no-repeat;
+  }
+  &_phone {
+    background: url("../img/svg/phone.svg") 4px 5px no-repeat;
+    a {
+      display: block;
+    }
+  }
+  &_mail {
+    background: url("../img/svg/mail.svg") 4px 2px no-repeat;
+    a {
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  &_time {
+    background: url("../img/svg/clock.svg") 4px 3px no-repeat;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.footer__copyright {
+  padding: 12px 72px 7px 0;
+  font-size: 14px;
+}
+
+.footer__copyright-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__copyright-left {
+  display: flex;
+  flex-direction: column;
+  padding-top: 4px;
+  opacity: 0.5;
+}
+
+.footer__copyright-link {
+  margin-bottom: 9px;
+  text-decoration: underline;
+}
+
+.footer__copyright-text {
+  margin-bottom: 10px;
+}

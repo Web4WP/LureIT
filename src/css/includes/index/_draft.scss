@@ -1,0 +1,155 @@
+.draft {
+  position: relative;
+  padding-top: 171px;
+  padding-bottom: 104px;
+  background-color: #F9FBFC;
+  background-image: url("../img/content/draft-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: right 195px;
+  background-size: cover;
+  overflow-x: hidden;
+  &::after {
+    content: url("../img/svg/draft-line.svg");
+  }
+}
+
+.draft__wrap {
+  margin-bottom: 69px;
+}
+
+.draft__case {
+  max-width: 300px;
+  margin-bottom: 30px;
+  p {
+    margin-bottom: 44px;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+}
+
+.draft__case-title {
+  margin-bottom: 41px;
+  font-family: $Comfortaa;
+  font-size: 30px;
+  color: #241A59;
+  span {
+    color: #40B5E7;
+  }
+}
+
+.draft__case-more {
+  padding: 15px 48px;
+  font-size: 16px;
+  font-weight: 700;
+  color: $white;
+  background: #40b5e7;
+  border-radius: 50px;
+  transition: 0.1s;
+  &:hover {
+    background: linear-gradient(266.97deg, #5A3EEA -2.41%, rgba(36, 26, 89, 0) 94.34%), #241A59;
+    color: $white;
+  }
+}
+
+.draft__slider {
+  position: relative;
+  margin-bottom: 167px;
+  padding-top: 89px;
+  z-index: 1000;
+}
+
+.draft__slider__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 12px;
+}
+
+.draft__slider-left {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 17px;
+}
+
+.draft__slider-number {
+  margin-right: 45px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #40B5E7;
+}
+
+.draft__slider-title {
+  display: inline-block;
+  max-width: 600px;
+  font-family: $Comfortaa;
+  font-size: 30px;
+  color: #241A59;
+  line-height: 1.5;
+}
+
+.draft__slider-right {
+  max-width: 190px;
+  padding-right: 115px;
+}
+
+.draft__slider-right-img {
+  height: 47px;
+  margin-right: 34px;
+  margin-bottom: 41px;
+  object-fit: cover;
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+.draft__descr {
+  max-width: 300px;
+  p {
+    font-weight: 300;
+    line-height: 1.5;
+  }
+}
+
+.draft__descr-title {
+  margin-bottom: 44px;
+  font-family: $Comfortaa;
+  font-size: 30px;
+  color: #241A59;
+  line-height: 1.5;
+  span {
+    color: #40B5E7;
+  }
+}
+
+.draft__ellipse {
+  position: absolute;
+  top: 60px;
+  right: -191px;
+}
+
+.draft__dot {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #40B5E7;
+  &_first {
+    top: 20px;
+    right: 591px;
+  }
+  &_second {
+    top: 192px;
+    left: 156px;
+  }
+  &_three {
+    top: 885px;
+    left: 150px;
+  }
+  &_four {
+    top: 1062px;
+    left: 553px;
+  }
+}
+
+.draft__dot.active {
+  background: #241A59;
+}
