@@ -5,6 +5,8 @@
 @import "lib/bootstrap/utilities";
 @import "lib/bootstrap/modal";
 @import "lib/bootstrap/nav";
+@import "lib/bootstrap/accordion";
+@import "lib/bootstrap/transitions";
 
 /* Common */
 @import "common/fonts";
@@ -12,6 +14,11 @@
 @import "common/header";
 @import "common/footer";
 
+/* Reuse */
+@import "reuse/skills";
+@import "reuse/advantages";
+@import "reuse/menu";
+@import "reuse/requisites";
 
 /* Includes - Index */
 @import "includes/index/banner";
@@ -19,4 +26,33 @@
 @import "includes/index/company";
 @import "includes/index/solution";
 @import "includes/index/draft";
-@import "reuse/skills";
+
+/* Includes - Services */
+@import "includes/services/dev";
+@import "includes/services/consulting";
+
+/* Includes - Vacancy */
+@import "includes/vacancy/career";
+@import "includes/vacancy/worth";
+@import "includes/vacancy/work";
+
+/* Includes - About */
+@import "includes/about/about-us";
+@import "includes/about/partner";
+@import "includes/about/cer";
+@import "includes/about/staff";
+
+/* Includes - Projects */
+@import "includes/projects/start";
+@import "includes/projects/projects";
+
+/* Includes - Case */
+@import "includes/case/single";
+@import "includes/case/case-advantages";
+@import "includes/case/client";
+@import "includes/case/reviews";
+@import "includes/case/other";
+
+/* Includes - Contact */
+@import "includes/contacts/contact";
+@import "includes/contacts/map";

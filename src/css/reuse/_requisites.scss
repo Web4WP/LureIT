@@ -1,0 +1,60 @@
+.requisites {
+  font-size: 14px;
+  font-weight: 300;
+  color: #7C8A99;
+  p {
+    margin-bottom: 30px;
+    strong {
+      font-size: 14px;
+    }
+  }
+}
+
+.requisites__wrap {
+
+}
+
+.requisites__content {
+  padding: 40px 35px;
+  box-shadow: 20px 21px 44px rgba(62, 142, 176, 0.09), -2px -2px 21px rgba(255, 255, 255, 0.74);
+  border-radius: 5px;
+  border: none;
+}
+
+.requisites__close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 17px;
+  height: 17px;
+  background: url("../img/svg/close.svg") center center no-repeat;
+  background-size: cover;
+}
+
+.requisites__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.requisites__btn {
+  padding: 16px 30px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #40b5e7;
+  border-radius: 50px;
+  transition: background-color 0.1s ease;
+  &:hover {
+    cursor: pointer;
+    color: #ffffff;
+    background: linear-gradient(266.97deg,#5a3eea -2.41%,rgba(36,26,89,0) 94.34%), #241a59;
+  }
+}
+
+.requisites__download {
+  font-size: 16px;
+  font-weight: 700;
+  color: #40B5E7;
+  border-bottom: 1px dashed #40B5E7;
+}

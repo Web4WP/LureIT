@@ -1,5 +1,7 @@
 .header {
+  position: relative;
   padding: 15px 0;
+  z-index: 99999;
   a, button {
     font-family: $Comfortaa;
     font-size: 14px;
@@ -7,6 +9,49 @@
     line-height: 1;
     color: $white;
   }
+  &_inner {
+    a, button {
+      color: #241A59;
+    }
+    .alt-logo {
+      display: none;
+    }
+    .alt-logo.open {
+      display: inline-block;
+    }
+    .logo-bas.open {
+      display: none;
+    }
+    .header__menu::before {
+      content: url("../img/svg/menu-blue.svg");
+    }
+    .header__lang {
+      background-image: url("../img/svg/lang-arrow-dark.svg");
+    }
+    .header__person {
+      background-image: url("../img/svg/person-dark.svg");
+    }
+  }
+  &_inner.open {
+    a, button {
+      color: #ffffff;
+    }
+    .header__lang {
+      background-image: url("../img/svg/lang-arrow.svg");
+    }
+    .header__person {
+      background-image: url("../img/svg/person.svg");
+    }
+  }
+}
+
+.header_inner.fixed {
+  position: fixed;
+  top: 30px;
+  width: 100%;
+  z-index: 1000;
+  transition: 0.3s;
+
 }
 
 .header__wrap {
@@ -20,12 +65,32 @@
   margin-right: 31px;
   padding-left: 29px;
   color: $white;
+  &:hover {
+    text-decoration: underline;
+  }
   &::before {
     content: url("../img/svg/menu.svg");
     position: absolute;
     top: -4px;
     left: -7px;
     width: 22px;
+  }
+}
+
+.header__menu.open {
+  &::before {
+    content: url("../img/svg/close-menu.svg");
+    position: absolute;
+    top: -4px;
+    left: -7px;
+    width: 22px;
+  }
+}
+
+.header__soft {
+
+  &:hover {
+    text-decoration: underline;
   }
 }
 
@@ -61,4 +126,50 @@
   background-image: url("../img/svg/person.svg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+
+
+@media (max-width: 1023px) {
+
+  .header {
+    &_inner {
+      /*padding-top: 11px;*/
+      /*.header__left {
+        margin-right: 15px;
+      }
+      .header__middle a img {
+        width: 84px;
+      }
+      .header__right {
+        display: none;
+      }
+
+      .header__wrap {
+        max-width: 240px;
+        margin: 0 auto;
+        justify-content: space-between;
+        padding: 24px 15px;
+        border-radius: 46px;
+        background: #fefefe;
+        filter: drop-shadow(-4px 0px 10px rgba(255, 255, 255, 0.77)) drop-shadow(25px 32px 32px rgba(85, 94, 142, 0.1));
+      }*/
+
+    }
+  }
+
+  .header__soft, .header__person {
+    display: none;
+  }
+
+  .header__menu {
+    margin-right: 0;
+  }
+
+  .header__middle a img {
+    width: 107px;
+  }
+
+
+
 }

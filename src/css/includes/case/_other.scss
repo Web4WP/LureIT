@@ -1,0 +1,182 @@
+.other {
+  margin-bottom: 53px;
+  padding: 0 60px;
+}
+
+.other__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.other__prev {
+  width: 30%;
+  padding-top: 13px;
+}
+
+.other__prev-link {
+  display: inline-block;
+  margin-bottom: 27px;
+  padding-left: 45px;
+  font-family: $Comfortaa;
+  font-size: 14px;
+  font-weight: 700;
+  color: #40b5e7;
+  background: url("../img/svg/case-arrow-leeft.svg") left center no-repeat;
+}
+
+.other__prev-project {
+
+}
+
+.other__prev-project-img {
+  mix-blend-mode: multiply;
+  margin-bottom: 10px;
+}
+
+.other__prev-project-title {
+  display: block;
+  max-width: 200px;
+  margin-bottom: 19px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.other__prev-project-company {
+  max-width: 200px;
+  margin-right: auto;
+  font-size: 12px;
+  font-weight: 300;
+  color: #7c8a99;
+}
+
+.other__center {
+  width: 33%;
+  text-align: center;
+}
+
+.other__center-title {
+  margin-bottom: 53px;
+  padding-bottom: 50px;
+  font-family: $Comfortaa;
+  font-size: 30px;
+  font-weight: 700;
+  color: #241a59;
+  line-height: 1.2;
+  background: url("../img/svg/case-arrow-down.svg") bottom center no-repeat;
+}
+
+.other__center-btn {
+  padding: 15px 96px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #40B5E7;
+  border-radius: 50px;
+}
+
+.other__next {
+  width: 30%;
+  padding-top: 13px;
+  text-align: right;
+}
+
+.other__next-link {
+  display: inline-block;
+  margin-bottom: 27px;
+  padding-right: 45px;
+  font-family: $Comfortaa;
+  font-size: 14px;
+  font-weight: 700;
+  color: #40b5e7;
+  background: url("../img/svg/case-arrow-right.svg") right center no-repeat;
+}
+
+.other__next-project {
+  text-align: right;
+}
+
+.other__next-project-img {
+  mix-blend-mode: multiply;
+  margin-bottom: 10px;
+}
+
+.other__next-project-title {
+  display: block;
+  max-width: 200px;
+  margin-bottom: 19px;
+  margin-left: auto;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.other__next-project-company {
+  max-width: 200px;
+  margin-left: auto;
+  font-size: 12px;
+  font-weight: 300;
+  color: #7c8a99;
+}
+
+@media (max-width: 1279px) {
+
+  .other__next,
+  .other__prev {
+    padding-top: 0;
+  }
+
+  .other__center-title {
+    padding-top: 6px;
+  }
+
+}
+
+@media (max-width: 1023px) {
+
+  .other {
+    padding: 0;
+  }
+
+  .other__wrap {
+    margin-bottom: 40px;
+    padding: 0 10px;
+  }
+
+  .other__center-title {
+    font-size: 20px;
+  }
+
+  .other__prev-project,
+  .other__next-project {
+    display: none;
+  }
+
+  .other__prev, .other__next {
+    width: 50%;
+  }
+
+  .other__prev-link,
+  .other__next-link {
+    color: #40B5E7;
+  }
+
+  .other__prev-link {
+    padding-left: 40px;
+    background-position: 5px center;
+  }
+
+  .other__next-link {
+    padding-right: 40px;
+  }
+
+  .other__center {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .other__center-btn {
+    padding: 15px 75px;
+  }
+
+}

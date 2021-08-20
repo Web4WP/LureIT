@@ -1,0 +1,131 @@
+.map {
+  position: relative;
+  padding-bottom: 104px;
+  overflow-y: hidden;
+}
+
+.map__wrap {
+
+}
+
+.map__logo {
+  width: 275px;
+  margin-bottom: 45px;
+  padding-left: 38px;
+}
+
+.map__item {
+  position: relative;
+  margin-bottom: 36px;
+  padding-left: 38px;
+  &::before {
+    content: url("../img/svg/contact-map.svg");
+    position: absolute;
+    top: 35px;
+    left: 1px;
+  }
+}
+
+.map__item-title {
+  margin-bottom: 13px;
+  font-family: $Comfortaa;
+  font-size: 14px;
+  font-weight: 700;
+  color: #5140ab;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.map__item-text {
+  line-height: 1.2;
+}
+
+.map__route {
+  position: relative;
+  display: inline-block;
+  width: 180px;
+  margin-top: 17px;
+  padding: 14px 71px 14px 41px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #40b5e7;
+  border-radius: 50px;
+  transition: background-color 0.1s ease;
+  img {
+    position: absolute;
+    top: 50%;
+    right: 39px;
+    transform: translateY(-50%);
+  }
+  &:hover {
+    cursor: pointer;
+    color: #ffffff;
+    background: linear-gradient(266.97deg,#5a3eea -2.41%,rgba(36,26,89,0) 94.34%), #241a59;
+  }
+}
+
+.map__frame {
+  position: absolute;
+  top: -120px;
+  right: 0;
+  width: 60%;
+  filter: grayscale(1);
+  mask: url("../img/content/mask-2.png");
+  mask-size: cover;
+  mask-position: top left;
+  iframe {
+    width: 100%;
+    height: 720px;
+    border: none;
+    mask: url("../img/content/mask.png");
+    mask-size: cover;
+    mask-position: top left;
+  }
+  /*&::before {
+    content: "";
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(180deg, #FFFFFF 3.55%, rgba(249, 251, 252, 0) 90.78%);
+  }*/
+  /*  &::after {
+    content: "";
+    position: absolute;
+    top: 120px;
+    left: -18px;
+    width: 100px;
+    height: 100%;
+    background: linear-gradient(180deg, #FFFFFF 53.07%, rgba(249, 251, 252, 0) 90.78%);
+  }*/
+}
+
+
+@media (max-width: 1023px) {
+
+  .map {
+    padding-bottom: 0;
+  }
+
+  .map__logo {
+    width: 141px;
+    margin-bottom: 30px;
+  }
+
+  .map__route {
+    display: block;
+    /*margin: 30px auto 0;*/
+  }
+
+  .map__frame {
+    position: static;
+    width: 100%;
+    mask: none;
+    iframe {
+      height: 380px;
+    }
+  }
+
+}

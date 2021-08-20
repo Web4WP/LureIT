@@ -1,6 +1,7 @@
 .banner {
+  height: 76.4vh; /*76.4*/
   padding-top: 160px;
-  padding-bottom: 96px;
+  padding-bottom: 0; /*96*/
   font-size: 12px;
   font-weight: 300;
   color: $white;
@@ -78,9 +79,8 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 804px;
+  height: 100%; /*804*/
   z-index: -1;
-  object-fit: cover;
   &::before {
     content: "";
     position: absolute;
@@ -104,7 +104,122 @@
 }
 
 .banner__video-item {
+  position: absolute;
   width: 100%;
-  height: 804px;
+  height: auto; /*804*/
   object-fit: cover;
+}
+
+@media (max-width: 1439px) {
+
+  .banner {
+    height: 70vh;
+  }
+
+}
+
+@media (max-width: 1279px) {
+
+  .banner {
+    height: 83vh;
+  }
+
+  .banner__title {
+    font-size: 65px;
+  }
+
+}
+
+@media (max-width: 1023px) {
+
+  .banner {
+    height: 78vh;
+  }
+
+  .banner__title {
+    margin-bottom: 150px;
+    font-size: 50px;
+  }
+
+
+  .banner__wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .banner__left {
+    margin-bottom: 40px;
+  }
+
+  .banner__right {
+    align-self: flex-end;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .banner {
+    height: 74vh;
+    padding-top: 81px;
+    padding-bottom: 0;
+    /*padding-left: 15px;
+    padding-right: 15px;*/
+  }
+
+  .banner__title {
+    margin-bottom: 158px;
+    font-size: 26px;
+    letter-spacing: -0.68px;
+    line-height: 1.35;
+  }
+
+  .banner__wrap {
+    flex-direction: column;
+  }
+
+  .banner__left {
+    flex-direction: column;
+    margin-bottom: 79px;
+  }
+
+  .banner__left-title {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+
+  .banner__left-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+    &:nth-child(2) {
+      .banner__left-item-date {
+        margin-right: 83px;
+      }
+    }
+  }
+
+  .banner__left-item-date {
+    width: 130px;
+    margin-right: 72px;
+  }
+
+  .banner__right {
+    align-self: flex-end;
+  }
+
+  .banner__video,
+  .banner__video-item {
+    height: 110%; /*678*/
+  }
+
+}
+
+@media (max-width: 374px) {
+
+  .banner {
+    padding-bottom: 35px;
+  }
+
 }

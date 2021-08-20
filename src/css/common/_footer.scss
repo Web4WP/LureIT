@@ -6,10 +6,14 @@
   }
 }
 
+footer.open {
+  display: none;
+}
+
 .footer__wrap {
   display: flex;
   justify-content: space-between;
-  padding: 107px 0 40px;
+  padding: 50px 0 20px;
   border-bottom: 1px solid #484166;
 }
 
@@ -112,7 +116,7 @@
 }
 
 .footer__copyright {
-  padding: 12px 72px 7px 0;
+  padding: 10px 0;
   font-size: 14px;
 }
 
@@ -124,16 +128,127 @@
 
 .footer__copyright-left {
   display: flex;
-  flex-direction: column;
   padding-top: 4px;
+  font-weight: 300;
   opacity: 0.5;
 }
 
 .footer__copyright-link {
-  margin-bottom: 9px;
+  margin-right: 15px;
   text-decoration: underline;
 }
 
+.footer__copyright-right {
+  display: flex;
+}
+
 .footer__copyright-text {
-  margin-bottom: 10px;
+  margin-right: 15px;
+}
+
+.footer__copyright-dev {
+  opacity: 0.5;
+}
+
+@media (max-width: 1023px) {
+
+  .footer__wrap {
+    padding-top: 65px;
+  }
+
+  .footer__col:nth-child(3) {
+    width: 34%;
+  }
+
+  .footer__col-menu {
+    margin-right: 40px;
+  }
+
+  .footer__copyright {
+    padding: 12px 0 7px 0;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .footer__wrap {
+    flex-direction: column;
+    padding-top: 24px;
+  }
+
+  .footer__col {
+    width: auto;
+  }
+
+  .footer__col:nth-child(3) {
+    width: auto;
+  }
+
+  .footer__col:nth-child(2) {
+    width: auto;
+    margin-bottom: 34px;
+    justify-content: space-between;
+  }
+
+  .footer__col-menu {
+    margin-right: 0;
+  }
+
+  .footer__col-menu-title {
+    margin-bottom: 36px;
+  }
+
+  .footer__col-menu ul li {
+    margin-bottom: 22px;
+  }
+
+  .footer__col-menu ul li a {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .footer__col-about {
+    display: none;
+  }
+
+  .footer__col-logo-link {
+    margin-bottom: 40px;
+  }
+
+  .footer__col-contact-title {
+    padding-left: 13px;
+  }
+
+  .footer__col-contact-item {
+    margin-bottom: 45px;
+  }
+
+  .footer__copyright {
+    font-size: 12px;
+  }
+
+  .footer__copyright-left,
+  .footer__copyright-right {
+    flex-direction: column;
+  }
+
+  .footer__copyright-link {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .footer__copyright-right {
+    align-items: flex-end;
+  }
+
+  .footer__copyright-text {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .footer__social {
+    text-align: right;
+  }
+
 }

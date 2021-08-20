@@ -1,0 +1,21 @@
+.case-advantages {
+
+  .advantages {
+    margin-bottom: 51px;
+    padding: 44px 0 57px;
+    background: #ffffff;
+  }
+}
+
+@media (max-width: 1023px) {
+
+  .case-advantages {
+
+    .advantages {
+      margin-bottom: 0;
+      padding: 44px 0 0;
+      background: #ffffff;
+    }
+  }
+
+}

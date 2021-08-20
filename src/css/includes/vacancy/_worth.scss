@@ -1,0 +1,60 @@
+.worth {
+  margin-bottom: 121px;
+}
+
+.worth__wrap {
+  max-width: 925px;
+  margin: 0 auto;
+}
+
+.worth__carousel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.worth__carousel-item {
+  width: 27%;
+  text-align: center;
+}
+
+.worth__carousel-item-img {
+  margin-bottom: 30px;
+}
+
+.worth__carousel-text {
+  font-size: 12px;
+  line-height: 1.47;
+  color: #343A40;
+}
+
+@media (max-width: 1023px) {
+
+  .worth {
+    margin-bottom: 111px;
+  }
+
+  .worth__carousel-item-img {
+    max-width: 10%;
+    margin: 0 auto 34px;
+  }
+
+  .worth__carousel-item {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .worth__carousel-text {
+    max-width: 75%;
+    margin: 0 auto;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .worth__carousel-item-img {
+    max-width: 20%;
+  }
+
+}

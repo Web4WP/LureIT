@@ -1,0 +1,173 @@
+.reviews {
+  margin-bottom: 52px;
+}
+
+.reviews__title {
+  margin-bottom: 43px;
+  font-family: $Comfortaa;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #241a59;
+}
+
+.reviews__wrap {
+
+}
+
+.reviews__carousel {
+  display: flex;
+  margin-bottom: 30px;
+  padding: 0 67px;
+}
+
+.reviews__item {
+  position: relative;
+  width: 38%;
+  margin-right: 58px;
+  padding: 35px 40px 35px 30px;
+  background: #ffffff;
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+.reviews__item-header {
+  margin-bottom: 35px;
+  padding-left: 118px;
+}
+
+.reviews__item-name {
+  margin-bottom: 4px;
+  font-family: $Comfortaa;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  color: #241a59;
+}
+
+.reviews__item-position {
+  max-width: 180px;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #40b5e7;
+}
+
+.reviews__item-text {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.reviews__item-photo {
+  position: absolute;
+  top: -22px;
+  left: -22px;
+}
+
+.reviews__bar {
+  position: relative;
+  width: 86%;
+  height: 5px;
+  margin: 0 67px;
+  padding: 0 67px;
+  background: #D0D8DF;
+  border-radius: 5px;
+}
+
+.reviews__bar-percent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 5px;
+  border-radius: 5px;
+  background: #40B5E7;
+}
+
+@media (max-width: 1279px) {
+
+  .reviews__bar {
+    width: 72.5%;
+  }
+
+}
+
+@media (max-width: 1023px) {
+
+  .reviews__title {
+    margin-bottom: 52px;
+  }
+
+  .reviews__carousel {
+    padding: 0 20px;
+  }
+
+  .reviews__item {
+    width: auto;
+    margin-right: 0;
+    padding: 35px 20px 35px 30px;
+    &:nth-child(2) {
+      display: none;
+    }
+  }
+
+  .reviews__item-photo {
+    width: 117px;
+    left: -5px;
+  }
+
+  .reviews__item-name {
+    font-size: 14px;
+  }
+
+  .reviews__item-position {
+    font-size: 12px;
+  }
+
+  .reviews__bar {
+    width: 78%;
+    margin: 0 15px;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .reviews__title {
+    margin-bottom: 52px;
+  }
+
+  .reviews__carousel {
+    padding: 0 20px;
+  }
+
+  .reviews__item {
+    width: auto;
+    margin-right: 0;
+    padding: 35px 20px 35px 30px;
+    &:nth-child(2) {
+      display: none;
+    }
+  }
+
+  .reviews__item-photo {
+    width: 117px;
+    left: -5px;
+  }
+
+  .reviews__item-name {
+    font-size: 14px;
+  }
+
+  .reviews__item-position {
+    font-size: 12px;
+  }
+
+  .reviews__bar {
+    width: 55%;
+    margin: 0 15px;
+  }
+
+
+}

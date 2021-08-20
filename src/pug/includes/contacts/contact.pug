@@ -1,0 +1,36 @@
+div.contact
+  div.container
+    div.contact__wrap
+      div.contact__left
+        div.contact__item
+          div.contact__item-title Связаться с нами
+          div.contact__item-phone
+            a.contact__item-phone-link(href="#") +7 499 455 04 45 (инженеры)
+            a.contact__item-phone-link(href="#") +7 499 394 45 77 (отдел продаж)
+          div.contact__item-mail
+            a.contact__item-mail-link(href="#") info@invitech-ir.ru
+          div.contact__item-requisites
+            button.contact__item-requisites-link(data-bs-toggle="modal", data-bs-target="#requisites") Реквизиты <span>LURE</span> IT
+        div.contact__item
+          div.contact__item-title Техническая поддержка
+          div.contact__item-tech
+            a.contact__item-tech-link(href="#") +8 800 600 100
+          div.contact__item-support
+            a.contact__item-support-link(href="#") support@lureit.ru
+      div.contact__right
+        form.contact__form(action="/", method="post")
+          div.contact__form-wrap
+            div.contact__form-left
+              div.contact__form-item
+                input#user.contact__form-input(type="text", placeholder="Ваше Имя*")
+                label(for="user") Ваше имя
+              div.contact__form-item
+                input#phone.contact__form-input(type="text", placeholder="Номер телефона")
+                label(for="phone") Номер телефона
+              div.contact__form-item
+                input#email.contact__form-input(type="text", placeholder="e-mail:*")
+                label(for="email") e-mail:*
+              input.contact__form-submit(type="submit", value="Отправить")
+            div.contact__form-right
+              textarea
+            input.contact__form-submit.contact__form-submit_mobile(type="submit", value="Отправить")

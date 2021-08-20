@@ -1,0 +1,57 @@
+div.menu
+  div.menu__header
+    div.container
+      div.menu__header-wrap
+        //-a.menu__header-logo(href="#")
+          img.menu__header-logo-img(src="img/svg/logo-dark.svg", alt="")
+        //-button.menu__header-lang en
+  div.menu__content
+    div.container
+      div.menu__content-wrap
+        div.menu__content-left
+          ul.menu__content-list
+            li.menu__content-item
+              a.menu__content-link(href="services.html") Услуги
+            li.menu__content-item
+              a.menu__content-link(href="projects.html") Проекты
+            li.menu__content-item
+              a.menu__content-link(href="about.html") О компании
+            li.menu__content-item
+              a.menu__content-link(href="vacancy.html") Вакансии
+            li.menu__content-item
+              a.menu__content-link(href="contacts.html") Контакты
+            li.menu__content-item.menu__content-item_desk
+              a.menu__content-link(href="contacts.html") ServiceDesk | Войти
+        div.menu__content-middle
+          div.menu__content-middle-text <span>LURE <span>IT</span></span> оказывает услуги по проектированию и разработке
+          div.menu__content-middle-about Компания существует на рынке более 10 лет, и знаменита проектами такими как: Сбербанк, Альфа, Гугл, Яндекс.
+        div.menu__content-desk
+          div.menu__content-desk-wrap
+            div.menu__content-desk-title ServiceDesk
+            form.menu__content-desk-form(method="post", action="/")
+              div.menu__content-form-item
+                input#userLogin.menu__content-form-input(type="text", placeholder="Номер телефона или e-mail:*")
+                label(for="userLogin") Номер телефона или e-mail:*
+              div.menu__content-form-item
+                input#userPass.menu__content-form-input(type="password", placeholder="Пароль")
+                label(for="userPass") Пароль
+              div.menu__content-form-item
+                input.menu__content-form-submit(type="submit", value="Вход")
+              div.menu__content-lost
+                a.menu__content-lost-link(href="#") Забыли пароль?
+                a.menu__content-lost-link(href="#") Регистрация
+  div.menu__contact
+    div.container
+      div.menu__contact-wrap
+        div.menu__contact-phone
+          a.menu__contact-phone-link(href="#") +7 499 455 04 45 (инженеры)
+          a.menu__contact-phone-link(href="#") +7 499 394 45 77 (отдел продаж)
+        div.menu__contact-social
+          a.menu__contact-social-link(href="#")
+            img.menu__contact-social-img(src="img/svg/menu-in.svg", alt="")
+          a.menu__contact-social-link(href="#")
+            img.menu__contact-social-img(src="img/svg/menu-facebook.svg", alt="")
+        div.menu__contact-privacy
+          a.menu__contact-privacy-link(href="#") Privacy Policy
+          a.menu__contact-privacy-link(href="#") Legal information
+  //-button.menu__close

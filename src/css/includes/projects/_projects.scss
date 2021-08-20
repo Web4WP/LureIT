@@ -1,0 +1,134 @@
+.projects {
+  padding: 94px 0;
+  background: #F2F8FB;
+}
+
+.projects__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1015px;
+  margin: 0 auto;
+  padding-left: 94px;
+}
+
+.projects__item {
+  position: relative;
+  width: 294px;
+  height: 250px;
+  margin-bottom: 51px;
+  padding: 20px 18px 20px 15px;
+  margin-right: 15px;
+  background: #FAFBFC;
+  transition: box-shadow 0.2s ease;
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+  &:hover {
+    box-shadow: 20px 21px 44px rgba(62, 142, 176, 0.09), -2px -2px 21px rgba(255, 255, 255, 0.74);
+  }
+}
+
+.projects__item-picture {
+  margin-bottom: 39px;
+  text-align: right;
+}
+
+.projects__item-img {
+  mix-blend-mode: multiply;
+  min-height: 30px;
+}
+
+.projects__item-wrap {
+  max-width: 220px;
+}
+
+.projects__item-title {
+  margin-bottom: 28px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.projects__item-link {
+  display: inline-block;
+  &:hover {
+    color: #40b5e7;
+  }
+}
+
+.projects__item-name {
+  position: absolute;
+  bottom: 30px;
+  max-width: 200px;
+  font-size: 12px;
+  color: #7c8a99;
+  line-height: 1.2;
+}
+
+@media (max-width: 1279px) {
+
+  .projects {
+    padding: 50px 0;
+  }
+
+  .projects__wrap {
+    padding-left: 0;
+    justify-content: space-between;
+  }
+
+  .projects__item {
+    max-width: 29%;
+  }
+
+}
+
+@media (max-width: 1023px) {
+
+  .projects__wrap {
+    justify-content: space-evenly;
+  }
+
+  .projects__item {
+    max-width: 44.5%;
+    &:last-child {
+      display: none;
+    }
+  }
+
+  .projects__item:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .projects__item:nth-child(3n) {
+    margin-right: 15px;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .projects {
+    padding: 55px 0;
+  }
+
+  .projects__wrap {
+    padding-left: 0;
+  }
+
+  .projects__item {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 33px;
+    padding: 20px 18px 0 15px;
+  }
+  .projects__item:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .projects__item-name {
+    position: static;
+  }
+
+
+}
